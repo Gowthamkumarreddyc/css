@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(179, 255, 236);
+        }
+        .row1{
+            text-align: center;
+            margin-top: 100px;
+            color: green;
+        }
+        .row2{
+            display: flex;
+            background-color: white;
+            width: 650px;
+            height: 300px;
+            margin-top: 40px;
+            margin-left: 300px;
+            border-radius: 20px;
+        }
+        .inner1{
+            width: 50%;
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+        .to{
+            background-color: bisque;
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .inner2{
+            width: 50%;
+            background-color: darkgreen;
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            margin-top: 30px;
+            
+        }
+        .ef{
+            width: 200px;
+            height: 30px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-top: 20px;
+            text-align: center;
+            padding-top: 8px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <h4>S P L I <br> T T E R</h4>
+        </div>
+        <div class="row2">
+            <div class="inner1">
+                <p>Bill</p>
+                <div class="to">
+                    142.55
+                    </div>
+                <p>Select tip %</p>
+                <div class="ab" style="margin: 10px; ">
+                    <button style="background-color: darkgreen; font-size:medium; color:white">5%</button>
+                    <button style="background-color: darkgreen; font-size:medium; color:white">10%</button>
+                    <button style="background-color: aquamarine; font-size:medium;">15%</button>
+                </div>
+                <div class="cd" style="margin: 10px;">
+                    <button style="background-color: darkgreen; font-size:medium; color:white">25%</button>
+                    <button style="background-color: darkgreen; font-size:medium; color:white">50%</button>
+                    <button style="background-color: aquamarine; font-size:medium;">custom</button>
+                </div>
+                <p>Number of people </p>
+                <div class="to">
+                    5
+                </div>
+            </div>
+            <div class="inner2">
+                <div style="display: flex;flex-direction: row;">
+                    <p style="padding-top: 20px; padding-left: 10px;color: white;">Tip Amount</p>
+                    <h1 style="padding-left: 65px;color: aquamarine;">$4.27</h1>
+                </div>
+                <div style=" display: flex;flex-direction: row;">
+                    <p style="padding-top: 20px; padding-left: 10px;color: white;">Total</p>
+                    <h1  style="padding-left: 110px;color: aquamarine;">$32.79</h1>
+                </div>
+                <div class="ef">
+                    RESET
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

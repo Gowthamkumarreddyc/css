@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(208, 208, 225);
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .tog {
+            display: flex;
+            flex-direction: row;
+            padding-left: 500px;
+        }
+
+        .free {
+            color: lightskyblue;
+            width: 80px;
+            height: 30px;
+            background-color: azure;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 10px;
+            float: right;
+        }
+        .row2{
+            display: flex;
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+        .card1{
+            background-color: white;
+            width: 250px;
+            height: 330px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .card2{
+            background-color: blue;
+            width: 250px;
+            height: 370px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        .card3{
+            background-color: white;
+            width: 250px;
+            height: 330px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .inner{
+            background-color: rgb(25, 54, 149);
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+            margin: 15px;
+            margin-left: 25px;
+            text-align: center;
+            padding-top: 15px;
+            font-size: small;
+            color: white;
+    
+        }
+        .inner3{
+            background-color: white;
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+            margin: 25px;
+            margin-left: 25px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            color: black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="free">FREE
+        </div>
+        <div class="row1">
+            <h1 style="text-align: center; margin-top: 50px;">Our Pricing</h1>
+            <div class="tog">
+                <h4>Automatically</h4>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <h4>Manually</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="row2">
+        <div class="card1">
+            <p>Basic</p>
+            <h1>$19.99</h1>
+            <hr>
+            <p>500gb storage</p>
+            <hr>
+            <p> 2 user allowed</p>
+            <hr>
+            <p>Send up to 3gb</p>
+            <hr>
+            <div class="inner">LEARN MORE</div>
+        </div>
+        <div class="card2">
+            <p>Professional</p>
+            <h1>$24.99</h1>
+            <hr>
+            <p>1Tb storage</p>
+            <hr>
+            <p> 5 user allowed</p>
+            <hr>
+            <p>Send up to 30gb</p>
+            <hr>
+            <div class="inner3">LEARN MORE</div>
+        </div>
+        <div class="card3">
+            <p>Master</p>
+            <h1>$39.99</h1>
+            <hr>
+            <p>2Tb storage</p>
+            <hr>
+            <p> 20 user allowed</p>
+            <hr>
+            <p>Send up to 20gb</p>
+            <hr>
+            <div class="inner">LEARN MORE</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
